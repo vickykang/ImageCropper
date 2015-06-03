@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageCropperView">
+        <attr name="rectColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="initWidth" format="dimension" />
+        <attr name="initHeight" format="dimension" />
+    </declare-styleable>
+
+    <color name="default_rect_color">#f2f2f2</color>
+    <color name="default_shadow_color">#b2000000</color>
+</resources>

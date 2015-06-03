@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#424c50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="crop image"
+            android:textColor="#c3c3c3"
+            android:textSize="18dp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="OK"
+            android:textColor="#424c50"
+            android:background="@drawable/bg_btn"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <cn.dream.imagecropper.cropper.ImageCropperView
+            android:id="@+id/cropper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lijian"
+            android:background="@android:color/black"
+            android:scaleType="centerInside"
+            app:strokeWidth="2dp"
+            app:radius="5dp"
+            app:initWidth="150dp"
+            app:initHeight="150dp" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/failed"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cropper_rect">#bbbbbb</color>
+    <color name="cropper_shadow">#b23c3c3c</color>
+</resources>
